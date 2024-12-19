@@ -7,12 +7,12 @@ import java.awt.event.*;
 import java.util.*;
 
 public class Master_Mind extends JFrame {
-    // List of possible colors in the game
+    
     private final String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange", "Purple"};
     private final String[] secretCode = new String[4];
     private int attemptsLeft = 10;
 
-    // GUI components
+    
     private ArrayList<JComboBox<String>> guessComboBoxes = new ArrayList<>();
     private JButton submitButton;
     private JTextArea feedbackArea;
@@ -105,7 +105,7 @@ public class Master_Mind extends JFrame {
         for (int i = 0; i < 4; i++) {
             secretCode[i] = colors[rand.nextInt(colors.length)];
         }
-        System.out.println("Secret Code: " + Arrays.toString(secretCode)); // Debugging line
+        System.out.println("Secret Code: " + Arrays.toString(secretCode)); 
     }
 
     
